@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /deposit
+
+Sitemap: https://www.visitrwanda.site/sitemap.xml
