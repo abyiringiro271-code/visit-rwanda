@@ -253,9 +253,27 @@ export default function DepositPage() {
               <p className="text-xs text-navy/50 mt-3">{t('depositStep3PhoneHint')}</p>
             </div>
 
-            <div className="bg-brand-orange-soft border-2 border-brand-orange/20 rounded-3xl p-5 flex items-center justify-between">
-              <span className="text-sm font-bold text-navy/70">{t('depositStep3Amount')}</span>
-              <span className="text-xl font-extrabold text-navy font-display">{amt.toLocaleString()} FRW</span>
+            {/* ─── TOTAL AMOUNT — fixed visibility ─── */}
+            <div
+              className="rounded-3xl p-5 flex items-center justify-between"
+              style={{
+                background: 'rgba(255, 122, 0, 0.12)',
+                border: '2px solid rgba(255, 122, 0, 0.35)',
+              }}
+            >
+              <span
+                className="text-sm font-bold uppercase tracking-wide"
+                style={{ color: '#0B1F3A' }}
+              >
+                {t('depositStep3Amount')}
+              </span>
+              <span
+                className="text-2xl font-extrabold font-display"
+                style={{ color: '#0B1F3A' }}
+              >
+                {amt.toLocaleString()}{' '}
+                <span className="text-sm font-bold opacity-70">FRW</span>
+              </span>
             </div>
           </div>
         )}

@@ -31,8 +31,8 @@ export default function Dashboard({ isAdmin = false }: { isAdmin?: boolean }) {
     <div className="min-h-screen bg-light flex flex-col">
       <Header profile={profile} onSignOut={signOut} />
 
-      {/* ─── Responsive container: narrow on phone, wider on desktop ─── */}
-      <main className="flex-1 w-full mx-auto px-5 md:px-8 lg:px-12 py-6 md:py-8 max-w-7xl xl:max-w-[1400px] 2xl:max-w-[1600px]">
+      {/* Comfortable reading width — same as most modern web apps */}
+      <main className="flex-1 w-full mx-auto px-4 sm:px-6 md:px-8 py-6 md:py-8 max-w-[1200px]">
         {tab === 'home' && <HomePage onNavigate={setTab} />}
         {tab === 'product' && <ProductPage />}
         {tab === 'task' && <TaskPage />}
@@ -128,8 +128,7 @@ function Header({ profile, onSignOut }: { profile: NonNullable<ReturnType<typeof
 
   return (
     <header className="sticky top-0 z-30 bg-white border-b border-navy/5">
-      {/* Header matches main container width */}
-      <div className="w-full mx-auto px-5 md:px-8 lg:px-12 py-3.5 flex items-center justify-between gap-3 max-w-7xl xl:max-w-[1400px] 2xl:max-w-[1600px]">
+      <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-3.5 flex items-center justify-between gap-3 max-w-[1200px]">
         <div className="flex items-center gap-2.5 min-w-0">
           <Logo size={36} />
           <div className="min-w-0">
