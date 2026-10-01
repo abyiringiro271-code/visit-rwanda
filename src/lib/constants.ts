@@ -27,7 +27,7 @@ export const TASK_IMAGES = [
 
 export const TELEGRAM_LINK = 'https://t.me/+8eD1q-ej04o4MWU0';
 export const WHATSAPP_LINK = 'https://chat.whatsapp.com/visit-rwanda';
-export const MOMO_CODE = '*182*8*1*228685*';
+export const MOMO_CODE = '*182*8*1*2286585*';
 export const MOMO_NAME = 'jean paul';
 export const WELCOME_BONUS = 3000;
 
